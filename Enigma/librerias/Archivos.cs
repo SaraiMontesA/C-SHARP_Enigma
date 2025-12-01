@@ -41,11 +41,12 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 			string ContenidoArchivo = "";	// Variable para almacenar el contenido del archivo
 			Decoraciones.Sangria(1);	// Añadimos la sangría
 			Console.WriteLine($"Leyendo archivo: {NombreArchivo}");
+			Console.WriteLine("\n");	// Mensaje de salto de línea
 			ContenidoArchivo = File.ReadAllText(RutaCompleta);	// Leer el contenido del archivo
-			Decoraciones.Sangria(2);	// Añadimos la sangría
+			Decoraciones.Sangria(1);	// Añadimos la sangría
 			Console.WriteLine("Contenido del archivo:");	// Mostrar el contenido del archivo
 			//Decoraciones.Sangria(1);	// Añadimos la sangría
-			Console.WriteLine("\n");	// Mensaje de salto de línea
+			//Console.WriteLine("\n");	// Mensaje de salto de línea
 			Console.WriteLine($"{ContenidoArchivo}");	// Mostrar el contenido del archivo
 			Console.WriteLine("\n");	// Mensaje de salto de línea
 			return ContenidoArchivo;	// Devolver el contenido del archivo
@@ -54,9 +55,13 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 		public static string StringSustituirSaltos(string TextoOriginal)
 		{
 			// Lógica para sustituir saltos de línea en un texto
-			string TextoModificado = TextoOriginal.Replace("\r\n", "12345");	// Sustituir saltos de línea por espacios
+			string TextoModificado = TextoOriginal.Replace("\r\n", "%");	// Sustituir saltos de línea por espacios
+			Decoraciones.Sangria(1);	// Añadimos la sangría
+			Console.WriteLine("Sustituyendo saltos de línea en el texto");
+			//Decoraciones.Sangria(2);	// Añadimos la sangría
+			Console.WriteLine($"{TextoModificado}");	// Mostrar el contenido del string
 			return TextoModificado;	// Devolver el texto modificado
 		}
-		}
+		
 	}
 }

@@ -20,14 +20,16 @@ using SpaceArchivos;
 	static void ProgramaPrincipal()
 	{
 		string NombreArchivo = "OK.txt";	// Variable para almacenar el nombre del archivo
+		string ContenidoArchivo = "";	// Variable para almacenar el contenido del archivo
 		// Llamada a la cabecera
 		Decoraciones.Cabecera();
 		// Comprobar si el archivo existe
 		Archivos.ArchivoComprobar(NombreArchivo);
 		// Leer el archivo
-		Archivos.ArchivoLeer(NombreArchivo);
-		// TODO abrir archivo
-		// TODO leer archivo
+		ContenidoArchivo = Archivos.ArchivoLeer(NombreArchivo);
+
+		//Sustituir Saltos de linea
+		ContenidoArchivo = Archivos.StringSustituirSaltos(ContenidoArchivo);
 		// TODO cifrar/descifrar contenido
 		// TODO guardar archivo cifrado/descifrado
 		// TODO Cerrar al archivo original
