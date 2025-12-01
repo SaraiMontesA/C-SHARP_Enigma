@@ -23,6 +23,13 @@ using SpaceArchivos;
 		string NombreArchivo = "OK.txt";	// Variable para almacenar el nombre del archivo
 		bool ArchivoExiste = false;	// Variable para almacenar si el archivo existe
 		string ContenidoArchivo = "";	// Variable para almacenar el contenido del archivo
+		
+		//Aqui sabemos si estamos compilando en Depuración o en producción
+		#if DEBUG
+			Depuracion = true;
+		#else
+			Depuracion = false;
+		#endif
 
 		// Llamada a la cabecera
 		Decoraciones.Cabecera();

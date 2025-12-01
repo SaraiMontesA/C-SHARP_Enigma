@@ -1,0 +1,15 @@
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\bin\Release\net8.0\Enigma.exe
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\bin\Release\net8.0\Enigma.deps.json
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\bin\Release\net8.0\Enigma.runtimeconfig.json
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\bin\Release\net8.0\Enigma.dll
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\bin\Release\net8.0\Enigma.pdb
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.AssemblyInfoInputs.cache
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.AssemblyInfo.cs
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.csproj.CoreCompileInputs.cache
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.sourcelink.json
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.dll
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\refint\Enigma.dll
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.pdb
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\Enigma.genruntimeconfig.cache
+C:\Users\sarai\Documents\Programacion\C#\C-Sharp_Proyectos\Enigma\Enigma\obj\Release\net8.0\ref\Enigma.dll
