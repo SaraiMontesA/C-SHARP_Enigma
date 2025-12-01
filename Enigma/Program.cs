@@ -19,9 +19,13 @@ using SpaceArchivos;
 	// Programa principal
 	static void ProgramaPrincipal()
 	{
+		string NombreArchivo = "OK.txt";	// Variable para almacenar el nombre del archivo
 		// Llamada a la cabecera
 		Decoraciones.Cabecera();
-		Archivos.ArchivoComprobar("OK.txt");
+		// Comprobar si el archivo existe
+		Archivos.ArchivoComprobar(NombreArchivo);
+		// Leer el archivo
+		Archivos.ArchivoLeer(NombreArchivo);
 		// TODO abrir archivo
 		// TODO leer archivo
 		// TODO cifrar/descifrar contenido
