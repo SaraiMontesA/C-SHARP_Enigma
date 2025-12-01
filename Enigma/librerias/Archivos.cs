@@ -50,5 +50,13 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 			Console.WriteLine("\n");	// Mensaje de salto de línea
 			return ContenidoArchivo;	// Devolver el contenido del archivo
 		}
+	
+		public static string StringSustituirSaltos(string TextoOriginal)
+		{
+			// Lógica para sustituir saltos de línea en un texto
+			string TextoModificado = TextoOriginal.Replace("\r\n", "12345");	// Sustituir saltos de línea por espacios
+			return TextoModificado;	// Devolver el texto modificado
+		}
+		}
 	}
 }
