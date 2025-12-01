@@ -29,7 +29,9 @@ using SpaceArchivos;
 		ContenidoArchivo = Archivos.ArchivoLeer(NombreArchivo);
 
 		//Sustituir Saltos de linea
-		ContenidoArchivo = Archivos.StringSustituirSaltos(ContenidoArchivo);
+		ContenidoArchivo = Archivos.StringSaltosSustituir(ContenidoArchivo);
+		ContenidoArchivo = Archivos.StringSaltosRestaurar(ContenidoArchivo);
+
 		// TODO cifrar/descifrar contenido
 		// TODO guardar archivo cifrado/descifrado
 		// TODO Cerrar al archivo original
