@@ -19,22 +19,27 @@ using SpaceArchivos;
 	// Programa principal
 	static void ProgramaPrincipal()
 	{
+		bool Depuracion = false; // Modo producción o depuración
 		string NombreArchivo = "OK.txt";	// Variable para almacenar el nombre del archivo
+		bool ArchivoExiste = false;	// Variable para almacenar si el archivo existe
 		string ContenidoArchivo = "";	// Variable para almacenar el contenido del archivo
+
 		// Llamada a la cabecera
 		Decoraciones.Cabecera();
 		// Comprobar si el archivo existe
-		Archivos.ArchivoComprobar(NombreArchivo);
-		// Leer el archivo
-		ContenidoArchivo = Archivos.ArchivoLeer(NombreArchivo);
+		ArchivoExiste = Archivos.ArchivoComprobar(Depuracion, NombreArchivo);
+		
+		if (ArchivoExiste)
+		{	
+			// Leer el archivo
+			ContenidoArchivo = Archivos.ArchivoLeer(Depuracion, NombreArchivo);
 
-		//Sustituir Saltos de linea
-		ContenidoArchivo = Archivos.StringSaltosSustituir(ContenidoArchivo);
-		ContenidoArchivo = Archivos.StringSaltosRestaurar(ContenidoArchivo);
+			//Sustituir Saltos de linea
+			ContenidoArchivo = Archivos.StringSaltosSustituir(Depuracion, ContenidoArchivo);
+			ContenidoArchivo = Archivos.StringSaltosRestaurar(Depuracion, ContenidoArchivo);
+		}
 
-		// TODO cifrar/descifrar contenido
-		// TODO guardar archivo cifrado/descifrado
-		// TODO Cerrar al archivo original
+		// Llamada al pie del gato
 		Decoraciones.PieGato();
 		
 	}
