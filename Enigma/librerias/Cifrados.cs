@@ -43,7 +43,7 @@ namespace SpaceCifrados	// <-- Aquí declaramos el nombre del namespace
 			else	// Mensajes de producción
 				Console.WriteLine("Realizando paso 1. ");
 
-			Console.WriteLine("\n");	// Mensaje de salto de línea
+			//Console.WriteLine("\n");	// Mensaje de salto de línea
 			return TextoModificado;	// Devolver el texto modificado
 		}
 

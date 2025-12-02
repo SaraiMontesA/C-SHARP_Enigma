@@ -28,15 +28,15 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 		// ##############################################################
 		
 		// Comprobar que archivo existe
-		public static bool ArchivoComprobar(bool Depuracion, string NombreArchivo)
+		public static bool ArchivoComprobar(bool Depuracion, string NombreArchivo, string Extension)
 		{
 			//Variables
-			string RutaCompleta = Path.Combine(RutaArchivo, NombreArchivo);	// Construir la ruta completa del archivo
+			string RutaCompleta = Path.Combine(RutaArchivo, (NombreArchivo + Extension));	// Construir la ruta completa del archivo
 			bool ArchivoExiste = false;	// Variable para almacenar el resultado de la comprobación
 			
 			// Lógica para comprobar si un archivo existe
 			Decoraciones.Sangria(1);	// Añadimos la sangría
-			Console.WriteLine($"Comprobando existencia del archivo: {NombreArchivo}");	// Mensaje de depuración
+			Console.WriteLine($"Comprobando existencia del archivo: {NombreArchivo+Extension}");	// Mensaje de depuración
 			ArchivoExiste = File.Exists(RutaCompleta);	// Comprobar si el archivo existe
 			Decoraciones.Sangria(2);	// Añadimos la sangría
 
@@ -53,10 +53,10 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 		}	
 
 		// Leer archivo
-		public static string ArchivoLeer(bool Depuracion, string NombreArchivo)
+		public static string ArchivoLeer(bool Depuracion, string NombreArchivo, string Extension)
 		{
 			//Variables
-			string RutaCompleta = Path.Combine(RutaArchivo, NombreArchivo);	// Construir la ruta completa del archivo
+			string RutaCompleta = Path.Combine(RutaArchivo, (NombreArchivo + Extension));	// Construir la ruta completa del archivo
 			string ContenidoArchivo = "";	// Variable para almacenar el contenido del archivo
 
 			// Lógica para leer un archivo
@@ -76,10 +76,10 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 		}
 	
 		// Crear archivo
-		public static void ArchivoGuardar(bool Depuracion, string NombreArchivo, string ContenidoArchivo)
+		public static void ArchivoCifradoGuardar(bool Depuracion, string NombreArchivo, string Extension, string ContenidoArchivo)
 		{
 			//Variables
-			string RutaCompleta = Path.Combine(RutaArchivo, NombreArchivo);	// Construir la ruta completa del archivo
+			string RutaCompleta = Path.Combine(RutaArchivo, (NombreArchivo + Extension));	// Construir la ruta completa del archivo
 
 			// Lógica para crear un archivo
 			File.WriteAllText(RutaCompleta, ContenidoArchivo);	// Crear el archivo con el contenido proporcionado
