@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enigma")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45ff4e330eae15e18392b7e40405d67ec940f68b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enigma")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enigma")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
