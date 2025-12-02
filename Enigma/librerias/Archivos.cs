@@ -75,6 +75,22 @@ namespace SpaceArchivos	// <-- Aquí declaramos el nombre del namespace
 			return ContenidoArchivo;	// Devolver el contenido del archivo
 		}
 	
+		// Crear archivo
+		public static void ArchivoGuardar(bool Depuracion, string NombreArchivo, string ContenidoArchivo)
+		{
+			//Variables
+			string RutaCompleta = Path.Combine(RutaArchivo, NombreArchivo);	// Construir la ruta completa del archivo
 
+			// Lógica para crear un archivo
+			File.WriteAllText(RutaCompleta, ContenidoArchivo);	// Crear el archivo con el contenido proporcionado
+			Decoraciones.Sangria(1);	// Añadimos la sangría
+
+			if (Depuracion)	// Mensajes de depuración
+				Console.WriteLine($"Archivo {NombreArchivo} creado con el siguiente contenido:\n{ContenidoArchivo}");
+			else	// Mensajes de producción
+				Console.WriteLine("Archivo creado correctamente.");
+
+			Console.WriteLine("\n");	// Mensaje de salto de línea
+		}
 	}
 }

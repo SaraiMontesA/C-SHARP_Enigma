@@ -33,7 +33,7 @@ namespace SpaceCifrados	// <-- Aquí declaramos el nombre del namespace
 			//Variables
 			// Lógica para sustituir saltos de línea en un texto
 			string TextoModificado = TextoOriginal.Replace("\r\n", "%");	// Sustituir saltos de línea por espacios
-			Decoraciones.Sangria(1);	// Añadimos la sangría
+			Decoraciones.Sangria(2);	// Añadimos la sangría
 
 			if (Depuracion)	// Mensajes de depuración
 			{
@@ -52,7 +52,7 @@ namespace SpaceCifrados	// <-- Aquí declaramos el nombre del namespace
 			//Variables
 			// Lógica para restaurar saltos de línea en un texto
 			string TextoOriginal = TextoModificado.Replace("%", "\r\n");	// Restaurar saltos de línea
-			Decoraciones.Sangria(1);	// Añadimos la sangría
+			Decoraciones.Sangria(2);	// Añadimos la sangría
 
 			if (Depuracion)
 			{
@@ -64,6 +64,36 @@ namespace SpaceCifrados	// <-- Aquí declaramos el nombre del namespace
 
 			Console.WriteLine("\n");	// Mensaje de salto de línea
 			return TextoOriginal;	// Devolver el texto original
+		}
+	
+		public static string CifrarArchivo(bool Depuracion, string TextoOriginal)
+		{
+			// Variables
+			string Texto = TextoOriginal;
+
+			Decoraciones.Sangria(1);	// Añadimos la sangría
+			Console.WriteLine("Cifrando el archivo...");		// Mensaje de cifrado
+
+			//	Paso 1: Sustituir saltos de linea por %
+			Texto = CifradosSaltosSustituir(Depuracion, Texto);
+
+			// Devolvemos el resultado
+			return Texto;
+		}
+
+		public static string DescifrarArchivo(bool Depuracion, string TextoCifrado)
+		{
+			// Variables
+			string Texto = TextoCifrado;
+
+			Decoraciones.Sangria(1);	// Añadimos la sangría
+			Console.WriteLine("Descifrando el archivo...");		// Mensaje de descifrado
+
+			//	Paso 1: Restaurar saltos de linea
+			Texto = CifradosSaltosRestaurar(Depuracion, Texto);
+
+			// Devolvemos el resultado
+			return Texto;
 		}
 	}
 }
