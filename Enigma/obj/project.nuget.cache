@@ -1,18 +1,15 @@
-<<<<<<< HEAD
 {
   "version": 2,
-  "dgSpecHash": "LulKNJk6UQSu+bhbimBGO9r3sKpJj9cvqz/Mq5GEW4z/zgJXendj1mq58WTQtrlXaUHEOoYPgriOCurG7Z3Z+A==",
+  "dgSpecHash": "A/SfoGsYkCR2vwTDaOTBXMUN4pg2XHHDLAIG19oRLvpqTSVWHEcLTxR9Qy2njmeD7zw/bCNTzgnWfFAkzgBLUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\berdi\\Documents\\Sarai\\Personal\\Programacion\\C#\\C-Sharp_Proyectos\\Enigma\\Enigma\\Enigma.csproj",
+  "projectFilePath": "/media/sarai/Almacen/Programacion/C#/C-Sharp_Proyectos/Enigma/Enigma/Enigma.csproj",
   "expectedPackageFiles": [],
-  "logs": []
-=======
-{
-  "version": 2,
-  "dgSpecHash": "fhISUIr5dZsIsRoJ7sd+qyHpvyCiLlSIlJFrtZC0qr7z2T//fx+2Uv7CV/gW9fsbUG/fMt2Hg4ldv9l8hIzmgg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\sarai\\Documents\\Programacion\\C#\\C-Sharp_Proyectos\\Enigma\\Enigma\\Enigma.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
->>>>>>> e2c582a (Instalación de LUbuntu en surface)
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /media/sarai/Almacen/Programacion/C#/C-Sharp_Proyectos/Enigma/Enigma/obj/project.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
+    }
+  ]
 }
